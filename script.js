@@ -1,6 +1,6 @@
 window.onload = () => {
     let endpoint = 'https://pokeapi.co/api/v2/pokemon/'
-    let pokemon_type = getPokeTypesTo(pokemon)
+    //#let pokemon_type = getPokeTypesTo(pokemon)
     fetchPokemons();
 
     // $('#nexto').click((e) => {
@@ -100,10 +100,10 @@ window.onload = () => {
                                 .then(function(response){
                                     return response.json();
                                 })
-                                .then(function(pokemonsito){
-                                    document.querySelector('#pokeTypes').innerHTML = getPokeDamage(pokemon_type)
-                                    console.log(getPokeDamage(pokemon_type))
-                                })
+                                // .then(function(pokemonsito){
+                                //     document.querySelector('#pokeTypes').innerHTML = getPokeDamage(pokemon_type)
+                                //     console.log(getPokeDamage(pokemon_type))
+                                // })
                                 
 
                             })
